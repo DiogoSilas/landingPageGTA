@@ -1,0 +1,224 @@
+body {
+    background-color: #282828;
+    color: #fff;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 80px;
+    background-color: #0b0b0b;
+}
+
+header.header .logo {
+    display: flex;
+    gap: 15px;
+}
+
+header.header .menu {
+    display: flex;
+    gap: 30px;
+}
+
+header.header .menu li a {
+    color: #e8e8e8;
+    padding: 30px;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Chalet', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+header.header .menu li a:hover {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+main.home {
+    display: flex;
+    min-height: calc(100vh -80px);
+    position: relative;
+}
+
+main.home::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+main.home .img-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+main.home .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    max-width: 780px;
+    min-height: 100% ;
+    padding: 80px 80px 80px 170px;
+    gap: 32px;
+    z-index: 1;
+}
+
+main.home .info img {
+    max-width: 150px;
+}
+
+main.home .info .list-of-game {
+    display: flex;
+    gap: 32px;
+}
+
+main.home .info .title {
+    font-family: 'ChaletComprime';
+}
+
+main.home .info .text {
+    font-family: 'Chalet', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+main.home .info .btn-comprar,
+section.compre-ja div.card .btn-plataforma {
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+main.home .info .btn-comprar:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+section.compre-ja {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+}
+
+section.compre-ja .title {
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+section.compre-ja .capa-do-jogo {
+    width: 270px;
+}
+
+section.compre-ja .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 80px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+section.compre-ja .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.compre-ja .info h3 {
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+section.compre-ja .info p {
+    color: #e8e8e8;
+    font-family: 'Chalet';
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section.compre-ja .info .plataformas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+section.compre-ja .card .btn-plataforma {
+    color: #fff;
+    min-width: 100%;
+}
+
+section.compre-ja .card .btn-plataforma .plataformas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 20px;
+    transition: all 0.3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+section.compre-ja .card .btn-plataforma .plataformas.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+section.compre-ja .card .btn-plataforma .plataformas li {
+    padding: 20px;
+}
+
+section.compre-ja  .btn-plataforma .plataformas li:nth-child(1){
+    border: 1px solid #00439c;
+}
+
+section.compre-ja  .btn-plataforma .plataformas li:nth-child(1):hover{
+    background-color: #00439c;
+}
+section.compre-ja  .btn-plataforma .plataformas li:nth-child(2){
+    border: 1px solid #387a26;
+}
+
+section.compre-ja  .btn-plataforma .plataformas li:nth-child(2):hover{
+    background-color: #387a26;
+}
+
+section.compre-ja .btn-plataforma .plataformas li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+section.compre-ja .btn-plataforma .plataformas li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+section.compre-ja .btn-plataforma .plataformas li:nth-child(4) {
+    border: 1px solid #387a26; 
+}
+
+section.compre-ja .btn-plataforma .plataformas li:nth-child(4):hover {
+    background-color: #387a26;
+}
+section.compre-ja .btn-plataforma .plataformas li:nth-child(5) {
+    border: 1px solid #fcaf17; 
+}
+
+section.compre-ja .btn-plataforma .plataformas li:nth-child(5):hover {
+    background-color: #fcaf17;
+}
